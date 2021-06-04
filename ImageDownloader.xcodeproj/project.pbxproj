@@ -13,6 +13,7 @@
 		C7A15B192668E31900457F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A15B172668E31900457F1F /* Main.storyboard */; };
 		C7A15B1B2668E32100457F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A15B1A2668E32100457F1F /* Assets.xcassets */; };
 		C7A15B1E2668E32100457F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A15B1C2668E32100457F1F /* LaunchScreen.storyboard */; };
+		C7A15B2926690DEB00457F1F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A15B2826690DEB00457F1F /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C7A15B1A2668E32100457F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A15B1D2668E32100457F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A15B1F2668E32100457F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7A15B2826690DEB00457F1F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		C7A15B102668E31800457F1F /* ImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				C7A15B2726690DCB00457F1F /* Utility */,
+				C7A15B262668E46000457F1F /* Controller */,
+				C7A15B252668E44F00457F1F /* View */,
 				C7A15B112668E31800457F1F /* AppDelegate.swift */,
 				C7A15B132668E31800457F1F /* SceneDelegate.swift */,
-				C7A15B152668E31800457F1F /* ViewController.swift */,
-				C7A15B172668E31900457F1F /* Main.storyboard */,
 				C7A15B1A2668E32100457F1F /* Assets.xcassets */,
 				C7A15B1C2668E32100457F1F /* LaunchScreen.storyboard */,
 				C7A15B1F2668E32100457F1F /* Info.plist */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		C7A15B252668E44F00457F1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7A15B172668E31900457F1F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7A15B262668E46000457F1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7A15B152668E31800457F1F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7A15B2726690DCB00457F1F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C7A15B2826690DEB00457F1F /* ImageDownloader.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				C7A15B162668E31800457F1F /* ViewController.swift in Sources */,
 				C7A15B122668E31800457F1F /* AppDelegate.swift in Sources */,
+				C7A15B2926690DEB00457F1F /* ImageDownloader.swift in Sources */,
 				C7A15B142668E31800457F1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4CW5KP5TP;
 				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4CW5KP5TP;
 				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
